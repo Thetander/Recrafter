@@ -1,13 +1,18 @@
 import './App.css';
 import seriesImage from './assets/series.png';
 import modImage from './assets/perezoso.jpg';
+import aboutImage from './assets/ErizoSobre.jpg';
+import serverImage from './assets/service-server.jpg';
+import logoImage from './assets/logo_desle.png';
 function App() {
   return (
 
     <div>
       <header className="bg-primary text-white text-center py-5 header-bg">
+        {/*HEADER*/}
         <div className="container">
-          <h1 className="display-4 animate__animated animate__fadeInDown">Recrafter</h1>
+
+          <h1 className="display-4 animate__animated animate__fadeInDown">Recrafters</h1>
           <p className="lead animate__animated animate__fadeInUp">
             Series y servidores de Minecraft, mods y torneos de videojuegos
           </p>
@@ -17,7 +22,7 @@ function App() {
         </div>
       </header>
       {/* BARRA DE NAVEGACIÓN*/}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <nav className="navbar navbar-expand-lg bg-dark sticky-top">
         <div className="container">
           <a className="navbar-brand" href="#Inicio"><i className="fas fa-cube"></i> Recrafters</a>
           <button
@@ -31,6 +36,9 @@ function App() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          <div className='container-logo'>
+          <img src={logoImage} className="logo-desktop" alt="Series de Minecraft" />
+          </div>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -78,7 +86,7 @@ function App() {
             </div>
             <div className="col-md-4 mb-4">
               <div className="card h-100 shadow">
-                <img src={seriesImage} className="card-img-top" alt="Servidores de Minecraft" />
+                <img src={serverImage} className="card-img-top" alt="Servidores de Minecraft" />
                 <div className="card-body">
                   <h5 className="card-title">Servidores de Minecraft</h5>
                   <p className="card-text">
@@ -108,7 +116,7 @@ function App() {
         </div>
       </section>
       {/* SOBRE NOSOTROS*/}
-      <section id="about" className="about-us bg-light">
+      <section id="about" className="about-us ">
         <div className="container">
           <div className="row">
             <div className="col-md-6 mb-4">
@@ -124,11 +132,14 @@ function App() {
               </p>
             </div>
             <div className="col-md-6">
+              <div className="image-about">
               <img
-                src="assets/about.jpg"
+                src={aboutImage}
                 className="img-fluid rounded shadow animate__animated animate__fadeInRight"
                 alt="Sobre Nosotros"
               />
+              </div>
+            
             </div>
           </div>
         </div>
@@ -139,18 +150,18 @@ function App() {
           <h2 className="text-center mb-4">Contacto</h2>
           <div className="row">
             <div className="col-md-8 mx-auto">
-              <form>
+              <form  action= "https://formsubmit.co/09fe8d44cc1930032dac535a8ff115b9" method="POST">
                 <div className="form-group">
                   <label htmlFor="name">Nombre</label>
-                  <input type="text" className="form-control" id="name" placeholder="Tu Nombre" />
+                  <input type="text" name="name" className="form-control" id="name" placeholder="Tu Nombre" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Correo Electrónico</label>
-                  <input type="email" className="form-control" id="email" placeholder="Tu Correo Electrónico" />
+                  <input type="email"name="email" className="form-control" id="email" placeholder="Tu Correo Electrónico" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">Mensaje</label>
-                  <textarea
+                  <textarea name="subject"
                     className="form-control"
                     id="message"
                     rows="5"
