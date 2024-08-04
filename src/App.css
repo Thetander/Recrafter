@@ -49,7 +49,48 @@ nav{
   text-align: center;
   
 }
+.container-header{
+  position: relative;
 
+}
+
+.bubbles{
+  position: relative;
+  display: flex;
+
+}
+
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px; 
+  background-color: #42cdcd;
+  margin: 0 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #42cdcd44, 0 0 50px #42cdcd,
+  0 0 100px #42cdcd;
+  animation: animate  15s linear infinite;
+  animation-duration: calc(150s /var(--i));
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.bubbles span:nth-child(even){
+  background-color: #54b64b;
+  margin: 0 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #54b64b44, 0 0 50px #54b64b,
+  0 0 100px #54b64b;
+  
+  
+}
 .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
 }

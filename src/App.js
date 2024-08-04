@@ -10,8 +10,27 @@ function App() {
     <div>
       <header className="bg-primary text-white text-center py-5 header-bg">
         {/*HEADER*/}
-        <div className="container">
-
+        <div className="container-header">
+        <div className="bubbles">
+            <span style={{ '--i': 11 }}></span>
+            <span style={{ '--i': 12 }}></span>
+            <span style={{ '--i': 24 }}></span>
+            <span style={{ '--i': 10 }}></span>
+            <span style={{ '--i': 14 }}></span>
+            <span style={{ '--i': 16 }}></span>
+            <span style={{ '--i': 17 }}></span>
+            <span style={{ '--i': 13 }}></span>
+            <span style={{ '--i': 15 }}></span>
+            <span style={{ '--i': 22 }}></span>
+            <span style={{ '--i': 23 }}></span>
+            <span style={{ '--i': 25 }}></span>
+            <span style={{ '--i': 18 }}></span>
+            <span style={{ '--i': 16 }}></span>
+            <span style={{ '--i': 27 }}></span>
+            <span style={{ '--i': 15 }}></span>
+            <span style={{ '--i': 13 }}></span>
+            <span style={{ '--i': 16 }}></span>
+          </div>
           <h1 className="display-4 animate__animated animate__fadeInDown">Recrafters</h1>
           <p className="lead animate__animated animate__fadeInUp">
             Series y servidores de Minecraft, mods y torneos de videojuegos
@@ -37,7 +56,7 @@ function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className='container-logo'>
-          <img src={logoImage} className="logo-desktop" alt="Series de Minecraft" />
+            <img src={logoImage} className="logo-desktop" alt="Series de Minecraft" />
           </div>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
@@ -133,13 +152,13 @@ function App() {
             </div>
             <div className="col-md-6">
               <div className="image-about">
-              <img
-                src={aboutImage}
-                className="img-fluid rounded shadow animate__animated animate__fadeInRight"
-                alt="Sobre Nosotros"
-              />
+                <img
+                  src={aboutImage}
+                  className="img-fluid rounded shadow animate__animated animate__fadeInRight"
+                  alt="Sobre Nosotros"
+                />
               </div>
-            
+
             </div>
           </div>
         </div>
@@ -150,14 +169,14 @@ function App() {
           <h2 className="text-center mb-4">Contacto</h2>
           <div className="row">
             <div className="col-md-8 mx-auto">
-              <form  action= "https://formsubmit.co/09fe8d44cc1930032dac535a8ff115b9" method="POST">
+              <form action="https://formsubmit.co/09fe8d44cc1930032dac535a8ff115b9" method="POST">
                 <div className="form-group">
                   <label htmlFor="name">Nombre</label>
                   <input type="text" name="name" className="form-control" id="name" placeholder="Tu Nombre" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Correo Electrónico</label>
-                  <input type="email"name="email" className="form-control" id="email" placeholder="Tu Correo Electrónico" />
+                  <input type="email" name="email" className="form-control" id="email" placeholder="Tu Correo Electrónico" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">Mensaje</label>
