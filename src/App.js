@@ -7,7 +7,7 @@ function App() {
     <div>
       <header className="bg-primary text-white text-center py-5 header-bg">
         <div className="container">
-          <h1 className="display-4 animate__animated animate__fadeInDown">Recrafter</h1>
+          <h1 className="display-4 animate__animated animate__fadeInDown">ReactPractica</h1>
           <p className="lead animate__animated animate__fadeInUp">
             Series y servidores de Minecraft, mods y torneos de videojuegos
           </p>
